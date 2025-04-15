@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Teste vedade falso (programa do faust&#227;o)"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 10:28:56 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ5OzIwMjUtMDQtMDE7IjAxOjI4OjM3ICI7MjYyNg=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ5OzIwMjUtMDQtMTU7IjEwOjI4OjU2ICI7OTsyNzQ4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numMultiplo" type="Integer" array="False" size=""/>
+            <comment text="numMultiplo: Nome da vari&#225;vel que ser&#225; calculado para saber se &#233; multiplo de 5.&#13;&#10;"/>
+            <output expression="&quot;Digite um n&#250;mero para saber se &#233; multiplo de 5:&quot;" newline="True"/>
+            <input variable="numMultiplo"/>
+            <if expression="numMultiplo % 5 = 0">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; multiplo de 5&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu n&#250;mero N&#195;O &#233; multiplo de 5&quot;" newline="True"/>
+                </else>
+            </if>
+            <comment text="O &quot;numMultiplo%5=0&quot; &#233; para o computador considerar m&#250;ltiplo de 5 se o n&#250;mero dividido por 5 e sobrar 0, e n&#227;o multiplo de 5 se o n&#250;mero dividido por 5 n&#227;o sobrar 0."/>
+        </body>
+    </function>
+</flowgorithm>

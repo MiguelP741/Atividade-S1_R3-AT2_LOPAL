@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Teste vedade falso (programa do faust&#227;o)"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 10:24:47 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ5OzIwMjUtMDQtMDE7IjAxOjI4OjM3ICI7MjYyNg=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ5OzIwMjUtMDQtMTU7IjEwOjI0OjQ3ICI7ODsyNzQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numeracao" type="Integer" array="False" size=""/>
+            <comment text="numeracao: Nome da vari&#225;vel que ser&#225; a numera&#231;&#227;o dada pelo usu&#225;rio para saber se &#233; par ou impar.&#13;&#10;"/>
+            <output expression="&quot;Digite uma numera&#231;&#227;o para saber se &#233; par ou impar:&quot;" newline="True"/>
+            <input variable="numeracao"/>
+            <if expression="numeracao % 2 = 0">
+                <then>
+                    <output expression="&quot;Seu n&#250;mero &#233; par&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Seu n&#250;mero &#233; impar&quot;" newline="True"/>
+                </else>
+            </if>
+            <comment text="O &quot;numeracao%2=0&quot; &#233; para o computador considerar par se o n&#250;mero dividido por 2 e sobrar 0, e impar se o n&#250;mero dividido por 2 n&#227;o sobrar 0."/>
+        </body>
+    </function>
+</flowgorithm>

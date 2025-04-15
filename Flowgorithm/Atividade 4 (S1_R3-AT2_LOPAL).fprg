@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Teste vedade falso (programa do faust&#227;o)"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 10:27:30 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ5OzIwMjUtMDQtMDE7IjAxOjI4OjM3ICI7MjYyNg=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ5OzIwMjUtMDQtMTU7IjEwOjI3OjMwICI7ODsyNzM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numCompra, numDesconto" type="Real" array="False" size=""/>
+            <comment text="numCompra: Nome da vari&#225;vel que ser&#225; o valor da compra dado pelo usu&#225;rio.&#13;&#10;"/>
+            <comment text="numDesconto: Nome da vari&#225;vel que ser&#225; utilizada para o resultado do desconto aplicado ao valor da compra, o desconto der&#225; de 10%.&#13;&#10;"/>
+            <output expression="&quot;Digite o valor de sua compra:&quot;" newline="True"/>
+            <input variable="numCompra"/>
+            <if expression="numCompra &gt;= 100">
+                <then>
+                    <comment text="O &quot;numCompra&gt;=100&quot; &#233; para verificar se o valor da compra est&#225; na medida para aplicar o desconto de 10%.&#13;&#10;"/>
+                    <output expression="&quot;Sua compra ganhou um desconto de 10%!&quot;" newline="True"/>
+                    <assign variable="numDesconto" expression="numCompra * 0.9"/>
+                    <output expression="&quot;Com o desconto aplicado o valor total ser&#225; de:&quot; &amp;numDesconto" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Sua compra n&#227;o receber&#225; desconto, que pena!&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

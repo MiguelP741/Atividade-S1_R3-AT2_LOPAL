@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Teste vedade falso (programa do faust&#227;o)"/>
+        <attribute name="authors" value="DES-I1HSB"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-15 10:23:49 "/>
+        <attribute name="created" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ5OzIwMjUtMDQtMDE7IjAxOjI4OjM3ICI7MjYyNg=="/>
+        <attribute name="edited" value="REVTLUkxSFNCO0VTTjUxMk4xMjYyODQ5OzIwMjUtMDQtMTU7IjEwOjIzOjQ5ICI7NzsyNzQz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade" type="Integer" array="False" size=""/>
+            <comment text="idade: Nome da vari&#225;vel que ser&#225; a idade inserida pelo usu&#225;rio.&#13;&#10;"/>
+            <output expression="&quot;Digite sua idade:&quot;" newline="True"/>
+            <input variable="idade"/>
+            <if expression="idade &gt;= 18">
+                <then>
+                    <output expression="&quot;Vo&#231;&#234; &#233; maior de idade&quot;" newline="True"/>
+                </then>
+                <else>
+                    <comment text="O &quot;idade&gt;=18&quot; &#233; para o computador considerar d&#237;gitos maiores que 18 como pessoas maiores de idade, e caso for menor que o considerado &#233; menor de idade.&#13;&#10;"/>
+                    <if expression="idade &gt;= 0">
+                        <then>
+                            <output expression="&quot;Vo&#231;&#234; &#233; menor de idade&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Como voc&#234; est&#225; aqui digitando isso?&quot;" newline="True"/>
+                        </else>
+                    </if>
+                    <comment text="O &quot;idade&gt;=0&quot; serve para caso o usu&#225;rio digitar um n&#250;mero negativo ou igual a 0."/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
